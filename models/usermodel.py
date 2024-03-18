@@ -1,8 +1,6 @@
-from flask_sqlalchemy import SQLAlchemy
+from models import db
 
-db = SQLAlchemy()
 
-'''Creating a database that store the user information when registering '''
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50), unique=True, nullable=False)
