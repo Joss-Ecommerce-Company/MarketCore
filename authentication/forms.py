@@ -18,6 +18,7 @@ Forms:
       remember me checkbox. Provides validators for email and password fields.
 
 """
+
 class RegistrationForm(FlaskForm):
     username = StringField("username", validators=[DataRequired(), Length(min=2, max=20)])
     email = StringField("Email", validators=[DataRequired(), Email()])
