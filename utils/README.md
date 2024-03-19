@@ -6,12 +6,9 @@
 # Example password
     password = "secretpassword"
 
-    # Generate salt
-    salt = PasswordManager.generate_salt()
-
     # Hash the password with the generated salt
-    hashed_password = PasswordManager.hash_password(password, salt)
+    hashed_password = PasswordManager.hash_password(password)
 
     # Verification
-    is_verified = PasswordManager.verify_password(hashed_password, password, salt)
+    is_verified = PasswordManager.verify_password(hashed_password, password)
 ```
