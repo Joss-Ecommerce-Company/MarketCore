@@ -28,6 +28,5 @@ class User(Base):
         self.username = username
         self.email = email
 
-        salt = PasswordManager.generate_salt()
-        hashedpassword = PasswordManager.hash_password(password, salt)
-        self.password = hashedpassword
+        self.password = PasswordManager.hash_password(password)
+        print(self.password)
