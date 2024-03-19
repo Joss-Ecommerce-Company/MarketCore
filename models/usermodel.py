@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-import datetime
-
 from db import db
 from models import Base
+from utils import PasswordManager
 
+import datetime
 import uuid
 
 
 class User(Base):
     __tablename__ = 'users'
 
-    def get_unique_id():
+    def get_unique_id(self):
         new_id = str(uuid.uuid4())
         while db.session.query(User).filter_by(id=new_id).first():
             new_id = str(uuid.uuid4())
@@ -27,4 +27,7 @@ class User(Base):
         super().__init__()
         self.username = username
         self.email = email
-        self.password = password
+
+        salt = PasswordManager.generate_salt()
+        hashedpassword = PasswordManager.hash_password(password, salt)
+        self.password = hashedpassword
