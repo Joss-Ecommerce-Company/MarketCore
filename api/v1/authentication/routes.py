@@ -1,8 +1,9 @@
 from flask import Blueprint, render_template, redirect, url_for
 from .forms import LoginForm, RegistrationForm
-from .models import db, User
+from models import db, User
 
 auth = Blueprint('auth', __name__)
+
 
 @auth.route('/register', methods=['GET', 'POST'])
 def register():
@@ -11,6 +12,7 @@ def register():
     if form.validate_on_submit():
         return redirect(url_for('main.index'))
     return render_template('register.html', form=form)
+
 
 @auth.route("login", methods=["GET", 'POST'])
 def login():
