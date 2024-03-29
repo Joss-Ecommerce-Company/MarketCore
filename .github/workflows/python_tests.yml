@@ -5,14 +5,14 @@ on:
     branches:
       - '*'
 
-runs:
-  using: 'node20'
 
 jobs:
   test:
     name: Run Tests
     runs-on: ubuntu-latest
-
+  
+  runs:
+    using: 'node20'
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
