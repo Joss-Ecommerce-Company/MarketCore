@@ -9,17 +9,12 @@ jobs:
   test:
     name: Run Tests
     runs-on: ubuntu-latest
+    runs:
+      using: 'node20'
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-      runs:
-        using: 'node20'
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
 
     - name: Set up Python
       uses: actions/setup-python@v4
