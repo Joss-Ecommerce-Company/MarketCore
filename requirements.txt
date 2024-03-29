@@ -33,7 +33,7 @@ livereload==2.6.3
 lockfile==0.12.2
 lunr==0.6.2
 lxml==4.9.3
-PyGObject==3.46.0
+#PyGObject==3.46.0
 pyinotify==0.9.6
 PyJWT==2.7.0
 pyOpenSSL==23.0.0
