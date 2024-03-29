@@ -3,7 +3,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from db import db
 from models import User
-import utils
+
 
 
 class TestFlaskSQLAlchemy(unittest.TestCase):
@@ -38,7 +38,7 @@ class TestFlaskSQLAlchemy(unittest.TestCase):
         """Test if data can be inserted into a table."""
         self.db.create_all()
 
-        user = User('testuser', 'demo@demo.com', utils.PasswordManager.hash_password('testpassword'))
+        user = User('testuser', 'demo@demo.com', 'testpassword')
         self.db.session.add(user)
         self.db.session.commit()
 
