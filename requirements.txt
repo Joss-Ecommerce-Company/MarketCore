@@ -25,7 +25,7 @@ docker==5.0.3
 docker-compose==1.29.2
 dockerpty==0.4.1
 docopt==0.6.2
-duplicity==1.2.2
+#duplicity==1.2.2
 fasteners==0.17.3
 Flask==3.0.2
 Flask-SQLAlchemy==3.1.1
