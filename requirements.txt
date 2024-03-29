@@ -22,7 +22,7 @@ cryptography==38.0.4
 #distro==1.8.0
 #distro-info==1.5+ubuntu0.23.10.1
 docker==5.0.3
-docker-compose==1.29.2
+#docker-compose==1.29.2
 dockerpty==0.4.1
 docopt==0.6.2
 #duplicity==1.2.2
