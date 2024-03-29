@@ -10,7 +10,7 @@ certifi==2022.9.24
 chardet==5.1.0
 #cliapp==1.20180812.1
 click==8.1.6
-cloud-init==23.4.4
+#cloud-init==23.4.4
 cmdtest==0.32+git
 colorama==0.4.6
 command-not-found==0.3
