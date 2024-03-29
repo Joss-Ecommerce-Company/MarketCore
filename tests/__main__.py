@@ -2,12 +2,14 @@
 import unittest
 
 from . import (
-    TestPasswordManagerCase
+    TestPasswordManagerCase,
+    TestFlaskSQLAlchemy
 )
 
 suite = unittest.TestSuite()
 suite.addTests([
-    unittest.defaultTestLoader.loadTestsFromTestCase(TestPasswordManagerCase)
+    unittest.defaultTestLoader.loadTestsFromTestCase(TestPasswordManagerCase),
+    unittest.defaultTestLoader.loadTestsFromTestCase(TestFlaskSQLAlchemy)
 ])
 
 runner = unittest.TextTestRunner()
