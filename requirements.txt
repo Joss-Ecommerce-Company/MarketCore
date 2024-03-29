@@ -114,7 +114,7 @@ texttable==1.6.7
 tomli==2.0.1
 tornado==6.3.2
 tqdm==4.64.1
-ttystatus==0.38
+#ttystatus==0.38
 types-aiofiles==22.1
 types-annoy==1.17
 types-appdirs==1.4
