@@ -14,6 +14,7 @@ cryptography==38.0.4
 fasteners==0.17.3
 Flask==3.0.2
 Flask-SQLAlchemy==3.1.1
+Flask-WTF==1.2.1
 future==0.18.2
 httplib2==0.20.4
 iniconfig==1.1.1
@@ -193,3 +194,4 @@ watchdog==3.0.0
 webencodings==0.5.1
 websocket-client==1.2.3
 Werkzeug==3.0.1
+WTForms==3.1.2
