@@ -27,5 +27,7 @@ class User(Base):
         super().__init__()
         self.username = username
         self.email = email
+        self.set_password(password)
 
+    def set_password(self, password):
         self.password = PasswordManager.hash_password(password)
