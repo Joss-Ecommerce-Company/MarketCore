@@ -29,4 +29,3 @@ class User(Base):
         self.email = email
 
         self.password = PasswordManager.hash_password(password)
-        print(self.password)
