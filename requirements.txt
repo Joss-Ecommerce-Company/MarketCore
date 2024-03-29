@@ -250,7 +250,7 @@ types-xmltodict==0.13
 types-xxhash==3.0
 types-zxcvbn==4.4
 typing_extensions==4.7.1
-ubuntu-drivers-common==0.0.0
+#ubuntu-drivers-common==0.0.0
 ubuntu-pro-client==8001
 ufw==0.36.2
 unattended-upgrades==0.1
