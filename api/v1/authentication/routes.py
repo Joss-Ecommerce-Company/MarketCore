@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for, session, flash
 from .forms import LoginForm, RegistrationForm
-from models import db, User
+
 
 auth = Blueprint('auth', __name__)
 
